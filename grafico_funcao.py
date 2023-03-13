@@ -8,7 +8,7 @@ import numpy as np
 
 x = Symbol('x')
 
-f = Lambda(x, -9.81*x**2/2) # definindo a função
+f = Lambda(x, -9.81*x/2) # definindo a função
 
 hfont = {'fontname':'Helvetica'}
 
@@ -17,7 +17,7 @@ hfont = {'fontname':'Helvetica'}
 
 x0 = 0 #ponto inicial
 xf = 3 #ponto final
-q = 10000 #qnt max de pontos
+q = 100 #qnt max de pontos
 
 x_ = np.linspace(x0,xf,q)
 x__ = []
